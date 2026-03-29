@@ -1,0 +1,17 @@
+{
+  "name": "@akb/store-sqlite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@akb/domain-model": "workspace:*",
+    "@akb/storage-core": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests"
+  }
+}

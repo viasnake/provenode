@@ -1,0 +1,16 @@
+{
+  "name": "@akb/source-config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@akb/source-core": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests"
+  }
+}

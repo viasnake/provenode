@@ -1,0 +1,26 @@
+{
+  "name": "@akb/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "akb": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@akb/application-query": "workspace:*",
+    "@akb/application-source-sync": "workspace:*",
+    "@akb/domain-model": "workspace:*",
+    "@akb/source-filesystem": "workspace:*",
+    "@akb/source-git": "workspace:*",
+    "@akb/source-markdown": "workspace:*",
+    "@akb/store-filesystem-object": "workspace:*",
+    "@akb/store-sqlite": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema:common-metadata:0.1.0",
+  "type": "object",
+  "required": ["visibility","review_status","trust_level","freshness_class","conflict_status","lifecycle_state"],
+  "properties": {
+    "visibility": {"enum": ["public","internal","restricted","secret"]},
+    "review_status": {"enum": ["unreviewed","machine_verified","human_reviewed","rejected"]},
+    "trust_level": {"enum": ["canonical","strong","medium","weak","speculative"]},
+    "freshness_class": {"enum": ["realtime","fresh","aging","stale","unknown"]},
+    "conflict_status": {"enum": ["none","possible_conflict","confirmed_conflict","superseded"]},
+    "lifecycle_state": {"enum": ["draft","active","deprecated","archived","tombstoned"]}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema:mcp-resource:0.1.0",
+  "type": "object",
+  "required": ["resource","payload","freshness","confidence"],
+  "properties": {
+    "resource": {"type": "string"},
+    "payload": {"type": "object"},
+    "freshness": {"type": "string"},
+    "confidence": {"type": "string"}
+  }
+}

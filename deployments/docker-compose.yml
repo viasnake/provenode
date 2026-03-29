@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  provenode:
+    image: node:22
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+    command: ["bash","-lc","pnpm install && pnpm check"]

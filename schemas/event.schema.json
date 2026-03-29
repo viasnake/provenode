@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema:event-envelope:0.1.0",
+  "type": "object",
+  "required": ["event_id","tenant_id","object_refs","occurred_at","correlation_id"],
+  "properties": {
+    "event_id": {"type": "string"},
+    "tenant_id": {"type": "string"},
+    "object_refs": {"type": "array","items": {"type": "string"}},
+    "occurred_at": {"type": "string","format": "date-time"},
+    "correlation_id": {"type": "string"}
+  }
+}

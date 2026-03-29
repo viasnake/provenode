@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema:core-objects:0.1.0",
+  "type": "object",
+  "properties": {
+    "Entity": {"type": "object"},
+    "Document": {"type": "object"},
+    "Claim": {"type": "object"},
+    "Evidence": {"type": "object"},
+    "Relationship": {"type": "object"},
+    "Procedure": {"type": "object"},
+    "Command": {"type": "object"},
+    "Decision": {"type": "object"},
+    "IncidentPattern": {"type": "object"},
+    "EnvironmentSnapshot": {"type": "object"},
+    "Artifact": {"type": "object"}
+  }
+}
